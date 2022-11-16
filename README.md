@@ -1,6 +1,8 @@
+> Important: THIS IS NOT MY PROJECT! This project was created by a user named ItIckeYd who mysteriously deleted his account and with that the original repository of this project. I was a fan of it, and thats why i decided to upload the code that i luckily had backed up on my fork, to finish the things i had in mind. I will probably archive this repository when i am done.
+
 
 # Donations
-* <a href="https://paypal.me/VodRecovery" class="button">Support The Project</a> - Donations are not expected in any circumstances or are required to use the script. However if you do decide to donate know that it is greatly appreicated.
+* <a href="https://paypal.me/VodRecovery" class="button">Support The Original creator</a> - Donations are not expected in any circumstances or are required to use the script. However if you do decide to donate know that it is greatly appreicated.
 
 
 # VodRecovery
@@ -17,7 +19,7 @@
 5. Run Script
 
 ```
-git clone https://github.com/ItIckeYd/VodRecovery
+git clone https://github.com/not-nef/VodRecovery
 cd vodrecovery
 pip install -r requirements.txt
 python recovervod.py
@@ -64,9 +66,4 @@ Please choose an option:
 # Additional Notes
 * If creating an issue for a problem that your experiencing please provide atleast 1 example.
 * If you are not getting results back from the script. Please try vods from other streamers, if the other streamers vods give you results then the original vods you were trying probably just don't exist. 
-
-
-# Latest Release
-[Stable Release 1.0.5.0](https://github.com/ItIckeYd/VodRecovery/releases/tag/1.0.5.0-Full-Release)
-**- For fully updated code please download code from the **Main** branch** 
 
