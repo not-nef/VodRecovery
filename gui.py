@@ -2,7 +2,7 @@ import tkinter
 import sv_ttk
 import ntkutils
 from tkinter import ttk
-import pyperclip, time
+import pyperclip
 
 import RecoverVodGUI as r
 
