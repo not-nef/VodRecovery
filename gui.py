@@ -57,6 +57,11 @@ def linkrecover(link):
     if recovered_vod == "invalid": invalidlink()
     elif recovered_vod.endswith(".m3u8"): succesfullrecover(recovered_vod)
 
+def linkhelp():
+    clear()
+    lbl = Label("Go to your streamers page on twitchtracker.com,\nselect the stream you want to recover and copy the link").pack(anchor="w", padx=20, pady=20)
+    btnrecover = ttk.Button(btnframe, text="Recover your vod", command=asklink).pack(side="left", padx=20)
+
 def asklink():
     clear()
 
@@ -64,21 +69,13 @@ def asklink():
     link = ttk.Entry(topframe, width=100)
     link.pack(anchor="w", padx=20)
     btncontinue = ttk.Button(btnframe, text="Continue", command=lambda:linkrecover(link.get())).pack(side="left", padx=20)
-    btnlinkhelp = ttk.Button(btnframe, text="What link?", state="disabled").pack(side="left")
-
-def recover():
-    clear()
-
-    lbl = Label("Select your recovery method.").pack(anchor="w", padx=20, pady=20)
-    btnlink = ttk.Button(btnframe, text="With Link", command=asklink).pack(side="left", padx=20)
-    btnmanual = ttk.Button(btnframe, text="Manually", state="disabled").pack(side="left")
-    btncsv = ttk.Button(btnframe, text="With SullyGnome CSV export", state="disabled").pack(side="left", padx=20)
+    btnlinkhelp = ttk.Button(btnframe, text="What link?", command=linkhelp).pack(side="left")
 
 def mainpage():
     clear()
 
     lbl = Label("Welcome to VodRecovery!\n\nI want to...").pack(side="left", padx=20)
-    btnrecover = ttk.Button(btnframe, text="Recover a Vod", command=recover).pack(side="left", padx=20)
+    btnrecover = ttk.Button(btnframe, text="Recover a Vod", command=asklink).pack(side="left", padx=20)
     btndownload = ttk.Button(btnframe, text="Download a Vod", state="disabled").pack(side="left")
 
 
